@@ -1,0 +1,164 @@
+
+/* =========================================================
+   gradientation by 9faces, love from 9faces
+   ========================================================= */
+
+:root {
+  --bg: #05080d;
+  --bg2: #0a1017;
+  --surface: #0f1822;
+  --surface2: #152230;
+  --fg: #e8f2f7;
+  --fg2: #a9bfcf;
+  --fg3: #7f95a6;
+  --border: #1d2c3a;
+  --accent: #43e8c6;
+  --accent2: #6aa8ff;
+  --accent-fg: #04130f;
+  --font-sans: 'Inter', sans-serif;
+  --grad-aurora: linear-gradient(135deg, #6aa8ff 0%, #43e8c6 38%, #8ff5dd 66%, #6aa8ff 100%);
+}
+
+.editor-wrap, .editor-container {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+.monaco-editor, .monaco-editor .monaco-editor-background, .monaco-editor .margin {
+  background-color: transparent !important;
+}
+
+.monaco-editor .view-line span {
+  background-image: var(--grad-aurora) !important;
+  background-color: transparent !important; 
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+  display: inline-block !important; 
+  vertical-align: baseline !important;
+  text-shadow: none !important;
+}
+
+.monaco-editor .view-line span.mtk1,
+.monaco-editor .view-line span.mtk2,
+.monaco-editor .view-line span.mtk3, 
+.monaco-editor .view-line span.mtk4,
+.monaco-editor .view-line span.mtk8,
+.monaco-editor .view-line span.mtk11,
+.monaco-editor .view-line span.mtk12 {
+  background-image: none !important;
+  -webkit-text-fill-color: #ffffff !important; 
+  color: #ffffff !important;
+  font-style: italic !important;
+}
+
+.monaco-editor .view-line span.mtk9 {
+  background-image: none !important;
+  -webkit-text-fill-color: #ffffff !important; 
+  color: #ffffff !important;
+  font-style: normal !important;
+}
+
+.monaco-editor .cursor {
+  background: var(--accent) !important;
+  border-left: 2px solid var(--accent) !important;
+  -webkit-text-fill-color: initial !important;
+}
+.monaco-editor .selected-text {
+  background: rgba(67, 232, 198, 0.3) !important;
+  -webkit-text-fill-color: #04130f !important; 
+}
+.monaco-editor .line-numbers {
+  background: transparent !important;
+  color: var(--fg3) !important;
+  -webkit-text-fill-color: var(--fg3) !important;
+}
+.monaco-editor .current-line {
+  background: rgba(67, 232, 198, 0.08) !important;
+  border: none !important;
+}
+.monaco-editor .margin-view-overlays .current-line-margin {
+  border-left: 2px solid var(--accent) !important;
+}
+
+.tab-bar, .toolbar-box, .term-root {
+  background-color: var(--surface) !important;
+  border-bottom: 1px solid var(--border) !important;
+}
+
+.settings-root, .acc-page-title, .settings-root * {
+  color: var(--fg) !important;
+}
+
+.tb-brand {
+  font-size: 0 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}
+.tb-brand > * { display: none !important; }
+
+.tb-brand::before {
+  content: '' !important;
+  display: inline-block !important;
+  width: 24px !important;
+  height: 24px !important;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu5iSzsBdvRUunoevqdQaIpPGUTdUnfLDegaeCn4kdTWrV0KBvuWk6hMc&s=10') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  border-radius: 6px !important;
+}
+
+.tb-brand::after {
+  content: 'Aurora' !important;
+  font: 600 14px var(--font-sans) !important;
+  background: var(--grad-aurora) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+}
+.tb-brand-right, .tb-update { display: none !important; }
+
+h1, h2, h3, h4, h5, h6,
+.settings-root h1, .settings-root h2, .settings-root h3,
+.acc-page-title, .card-title, .explorer-shell .sp-title {
+  background: var(--grad-aurora) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+}
+
+h1 svg, h2 svg, h3 svg, h4 svg { 
+  color: var(--fg2) !important; 
+  fill: currentColor !important; 
+  -webkit-text-fill-color: initial !important; 
+}
+
+input, textarea, select {
+  background: rgba(0,0,0,0.4) !important;
+  color: var(--fg) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 12px !important;
+}
+
+html body button.btn-ghost.btn-execute[aria-label='Execute'],
+html body button[aria-label='Launch'],
+html body button[aria-label='Play'],
+html body button[class*='launch'] {
+  background: var(--grad-aurora) !important;
+  color: #04130f !important;
+  font-weight: 650 !important;
+  border: none !important;
+}
+
+html body button.btn-ghost.btn-execute[aria-label='Execute'] *,
+html body button[aria-label='Launch'] *,
+html body button[aria-label='Play'] *,
+html body button[class*='launch'] * {
+  color: #04130f !important;
+  fill: #04130f !important;
+  -webkit-text-fill-color: #04130f !important;
+}
