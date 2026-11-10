@@ -10,7 +10,7 @@ local gs = game:GetService("GuiService")
 local uis = game:GetService("UserInputService")
 local sg = game:GetService("StarterGui")
 local cg = game:GetService("CoreGui")
-local ss = game:GetService("SoundService")
+local ss = game:GetService("SoundService") -- sound service cuz yes (i dunno ion wanna use workspace)
 
 local w = "rbxassetid://11660423541"
 local b = "rbxassetid://4616500111"
@@ -37,7 +37,7 @@ end
 local gui = Instance.new("ScreenGui")
 gui.ResetOnSpawn = false
 gui.IgnoreGuiInset = true
-gui.DisplayOrder = 999
+gui.DisplayOrder = 999999999999999999999999
 gui.Parent = plr:WaitForChild("PlayerGui")
 
 local img = Instance.new("ImageLabel")
@@ -59,7 +59,6 @@ task.spawn(function()
 end)
 
 local snd = Instance.new("Sound")
--- HERE IS THE OLD SOUND:
 snd.SoundId = "rbxassetid://3200130016" 
 
 snd.Looped = true
