@@ -4,7 +4,7 @@
 -- have funn
 
 -- IGNORE COMMENTS
--- oh i used ai for this but script is written by hand itself
+-- ai was used in this to help me with something but the script is written by hand
 
 do
     local plrs = game:GetService("Players")
